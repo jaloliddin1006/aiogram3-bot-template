@@ -1,4 +1,9 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, KeyboardButtonPollType
+from aiogram.types import (
+    ReplyKeyboardMarkup, 
+    KeyboardButton, 
+    KeyboardButtonPollType,
+    ReplyKeyboardRemove
+)
 
 
 main = ReplyKeyboardMarkup(
@@ -38,3 +43,5 @@ maxsus_btn = ReplyKeyboardMarkup(
     resize_keyboard=True,
     one_time_keyboard=True,
 )
+
+rmk = ReplyKeyboardRemove()

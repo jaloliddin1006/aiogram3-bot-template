@@ -16,3 +16,14 @@ def calc_kb():
     builder.adjust(*[4]*4, 1) # 4, 4, 4, 4, 1
     
     return builder.as_markup(resize_keyboard=True, one_time_keyboard=True)
+
+
+
+def profile(text: str | list):
+    builder = ReplyKeyboardBuilder()
+    if isinstance(text, str):
+        text = [text]
+    [builder.button(text=item) for item in text]
+    
+    return builder.as_markup(resize_keyboard=True, one_time_keyboard=True)
+        

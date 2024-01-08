@@ -1,6 +1,6 @@
 import asyncio
 from aiogram import Bot, Dispatcher
-from handlers import bot_messages, user_commands
+from handlers import bot_messages, user_commands, questionaire
 from callbaks import pagination
 from config_reader import BOT_TOKEN
 
@@ -12,6 +12,7 @@ async def main():
     dp = Dispatcher()
     
     dp.include_router(user_commands.router)
+    dp.include_router(questionaire.router)
     dp.include_router(pagination.router)
     dp.include_router(bot_messages.router)
 
