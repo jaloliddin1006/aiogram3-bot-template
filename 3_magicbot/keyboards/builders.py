@@ -15,8 +15,7 @@ def calc_kb():
     builder.button(text="Orqaga")
     builder.adjust(*[4]*4, 1) # 4, 4, 4, 4, 1
     
-    return builder.as_markup(resize_keyboard=True, one_time_keyboard=True)
-
+    return builder.as_markup(resize_keyboard=True)
 
 
 def profile(text: str | list):
