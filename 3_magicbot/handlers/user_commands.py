@@ -7,14 +7,15 @@ from filters import IsAdmin, CheckForDigit
 
 router = Router()
 
-# @router.message(CommandStart(), IsAdmin(207936288))
-# async def ping_pong(message: Message):
-#     await message.answer(f'Hello admin <b>{message.from_user.full_name}!</b> start bosildi', reply_markup=reply.main)
+
+@router.message(CommandStart(), IsAdmin(207936288))
+async def ping_pong(message: Message):
+    await message.answer(f'Hello admin <b>{message.from_user.full_name}!</b> start bosildi', reply_markup=reply.main,  parse_mode='Markdown')
+
 
 @router.message(CommandStart())
 async def ping_pong(message: Message):
     await message.answer(f'Hello **{message.from_user.full_name}!** start bosildi', reply_markup=reply.main, parse_mode='Markdown')
-
 
 
 @router.message(Command(commands=['pay']), CheckForDigit())
