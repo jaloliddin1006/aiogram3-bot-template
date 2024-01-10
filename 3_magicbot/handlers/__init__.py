@@ -1,3 +1,3 @@
-from . import bot_messages
-from . import user_commands
-from . import questionaire
+from .users import *
+from .groups import *
+from .channels import *
