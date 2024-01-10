@@ -1,17 +1,14 @@
 import asyncio
-from aiogram import Bot, Dispatcher
 from handlers import bot_messages, user_commands, questionaire
 from callbaks import pagination
-from data.config_reader import BOT_TOKEN
 from middlewares.check_sub import CheckSubs
 from middlewares.antiflood import AntifloodMiddleware
 from utils.set_bot_commands import set_default_commands
 from utils.bot_start import on_startup_notify
+from loader import bot, dp
+
 
 async def main():
-    
-    bot = Bot(BOT_TOKEN, parse_mode='HTML')
-    dp = Dispatcher()
     
     dp.message.middleware(CheckSubs())
     # dp.message.middleware(AntifloodMiddleware())
@@ -23,9 +20,9 @@ async def main():
         bot_messages.router
     )
     await set_default_commands(bot)
-    await on_startup_notify(dp)
+    await on_startup_notify(bot)
 
-    await bot.delete_webhook(drop_pending_updates=True)
+    await bot.delete_webhook(drop_pending_updates=False)
     await dp.start_polling(bot, skip_updates=True)
     # print("tugadi")
     

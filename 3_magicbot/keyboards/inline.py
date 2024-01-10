@@ -12,11 +12,4 @@ ssilki_kb = InlineKeyboardMarkup(
 )
 
 
-sub_channel = InlineKeyboardMarkup(
-    inline_keyboard=[
-        [
-            InlineKeyboardButton(text="Obuna bo'lish", url="https://t.me/mamatmusayev_uz"),
-        ],
-        
-    ]
-)
+

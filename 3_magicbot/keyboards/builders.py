@@ -1,4 +1,4 @@
-from aiogram.utils.keyboard import ReplyKeyboardBuilder
+from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 
 
 def calc_kb():
@@ -26,3 +26,8 @@ def profile(text: str | list):
     
     return builder.as_markup(resize_keyboard=True, one_time_keyboard=True)
         
+        
+def check_channel_sub(chanells: list):
+    builder = InlineKeyboardBuilder()
+    [builder.button(text=name, url=link) for name, link in chanells]
+    return builder.as_markup()
