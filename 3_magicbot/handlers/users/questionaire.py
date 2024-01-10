@@ -4,8 +4,10 @@ from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from utils.states import Form
 from keyboards import builders, reply
+from filters import IsPrivateChat
 
 router = Router()
+router.message.filter(IsPrivateChat())
 
 
 @router.message(Command('profile'))
