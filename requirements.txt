@@ -1,0 +1,4 @@
+aiogram~=3.3.0
+python-dotenv~=1.0.0
+ujson~=5.9.0
+cachetools~=5.3.2
