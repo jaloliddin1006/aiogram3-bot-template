@@ -17,45 +17,55 @@
  # aiogram3-template-structure
 
 ```python
-|- bot.py .
-|- loader.py
-|- callbaks
-|  |- __init__.py
-|  |- pagination.py
-|- data
-|  |- __init__.py
-|  |- config_reader.py
-|- filters
-|  |- __init__.py
-|  |- is_admin.py
-|  |- is_channel.py
-|  |- is_group.py
-|  |- is_private_chat.py
-|- handlers
-|  |- __init__.py
-|  |- users
-|  |  |- __init__.py
-|  |  |- start.py
-|  |  |- commands.py
-|  |- groups
-|  |  |- __init__.py
-|  |- channels
-|  |  |- __init__.py
-|- keyboards 
-|  |- __init__.py
-|  |- builders.py
-|  |- fabrics.py
-|  |- inline.py
-|  |- reply.py
-|- middlewares
-|  |- __init__.py
-|  |- antiflood.py
-|  |- check_sub.py
-|- utils
-|  |- __init__.py
-|  |- bot_start.py
-|  |- set_bot_commands.py
-|  |- states.py
+├── bot.py
+├── loader.py
+├── requirements.txt
+├── README.md
+├── callbaks
+│   ├── __init__.py
+│   └── pagination.py
+├── data
+│   ├── config_reader.py
+│   ├── __init__.py
+│   ├── smiles.json
+│   └── subloader.py
+├── filters
+│   ├── __init__.py
+│   ├── is_admin.py
+│   ├── is_channel.py
+│   ├── is_digit_or_float.py
+│   ├── is_group.py
+│   └── is_private_chat.py
+├── handlers
+│   ├── __init__.py
+│   ├── channels
+│   │   └── __init__.py
+│   ├── groups
+│   │   └── __init__.py
+│   └── users
+│       ├── __init__.py
+│       ├── admin.py
+│       ├── bot_messages.py
+│       ├── questionaire.py
+│       └── user_commands.py
+├── keyboards
+│   ├── __init__.py
+│   ├── builders.py
+│   ├── fabrics.py
+│   ├── inline.py
+│   └── reply.py
+├── middlewares
+│   ├── __init__.py
+│   ├── check_sub.py
+│   └── throttling.py
+└── utils
+    ├── __init__.py
+    ├── bot_start.py
+    ├── set_bot_commands.py
+    ├── db
+    │   ├── __init__.py
+    │   └── postgres.py
+    └── states.py
 ```
 #
 Support  - <a href="https://t.me/Jaloliddin_Mamatmusayev">Telegram</a><br>
