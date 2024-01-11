@@ -93,3 +93,25 @@ channels filter +
 connect db -
 inline -
 ```
+
+#
+
+# DEPLOY
+>systemd setting
+```sh
+[Unit]
+Description=Aiogram bot
+After=network.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+WorkingDirectory=/var/www/Aiogram3-template
+ExecStart=/root/.local/bin/poetry run Aiogram3-template
+EnvironmentFile=/var/www/Aiogram3-template/.env
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
