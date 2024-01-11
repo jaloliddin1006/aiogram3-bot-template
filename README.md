@@ -58,6 +58,25 @@
 |  |- states.py
 ```
 #
+Support  - <a href="https://t.me/Jaloliddin_Mamatmusayev">Telegram</a><br>
+
+# Installation
+* 1 - clone repo 
+   - ```git clone https://github.com/jaloliddin1006/Aiogram3-template.git```
+* 2 - create a virtual environment and activate
+  - ```pip3 install virtualenv``` or ```virtualenv venv```
+  - ```virtualenv venv```
+  - ```venv\Scripts\activate```(windows) or ```source venv/bin/activate```(unix-based systems)
+* 3 - cd into project ```cd Aiogram3-template```
+* 4 - Install dependencies
+  - ```pip3 install -r requirements.txt```
+* 5 - Set your environment variables
+  - ```cp .env.example .env```
+* 6 - Run bot
+  - ```python3 bot.py```
+
+
+#
 > Quidagi funksiyalari tayyor
 ```
  channel reqiured +
