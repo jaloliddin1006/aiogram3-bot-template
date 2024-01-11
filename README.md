@@ -58,6 +58,7 @@
 |  |- states.py
 ```
 #
+
 Support  - <a href="https://t.me/Jaloliddin_Mamatmusayev">Telegram</a><br>
 
 # Installation
@@ -77,6 +78,7 @@ Support  - <a href="https://t.me/Jaloliddin_Mamatmusayev">Telegram</a><br>
 
 
 #
+
 > Quidagi funksiyalari tayyor
 ```
  channel reqiured +
