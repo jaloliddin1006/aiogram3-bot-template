@@ -3,7 +3,9 @@ from aiogram import Bot
 from data.config_reader import ADMIN_ID
 
 async def on_startup_notify(bot: Bot):
-    print("\n============= ||| Bot ishga tushdi ||| =============\n")
+    bot_ = await bot.me()
+    print(f"============= ||| Bot ishga tushdi| id: {bot_.id} | username: @{bot_.username} ||| =============\n")
+    
     for admin in ADMIN_ID:
         try:
             await bot.send_message(admin, "Bot ishga tushdi")

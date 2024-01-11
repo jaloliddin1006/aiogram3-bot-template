@@ -1,1 +1,1 @@
-from . import check_sub, antiflood
+from . import check_sub, throttling

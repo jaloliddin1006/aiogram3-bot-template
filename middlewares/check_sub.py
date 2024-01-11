@@ -20,8 +20,6 @@ class CheckSubs(BaseMiddleware):
         final_status = True
         unsubscribe_channels = []
         for channel in CHANNEL_ID:
-            # link = await event.bot.export_chat_invite_link(channel)
-            # channel_name = (await event.bot.get_chat(channel)).title
                 
             try:
                 
