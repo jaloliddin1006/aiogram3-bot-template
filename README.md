@@ -1,5 +1,6 @@
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
+> https://mastergroosha.github.io/aiogram-3-guide/
 
 > [!TIP]
 > Helpful advice for doing things better or more easily.
